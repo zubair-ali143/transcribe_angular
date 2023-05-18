@@ -1,0 +1,69 @@
+<section class="initial-screen">
+  <div class="form-container">
+    <form [formGroup]="signupForm" class="p-3 signup-form">
+      <div class="align-form">
+        <div class="form-heading py-2">
+          <h1 class="pt-2">Welcome back</h1>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            formControlName="email"
+            class="form-control"
+            id="form-email"
+            aria-describedby="emailHelp"
+            placeholder="Email/Phone Number"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password"
+            id="formpassword"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <div class="mt-4 form-check flex-between">
+          <div class="remmember-me-text">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="formCheckinput"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Remmember me</label
+            >
+          </div>
+          <div class="forgetpassword-text">
+            <a href="#">Forget Password?</a>
+          </div>
+        </div>
+        <div class="flex-around py-4">
+          <div class="social-icons" style="cursor: pointer;">
+            <span class="google-icon">Login with Google</span>
+          </div>
+          <div class="social-icons" style="cursor: pointer;">
+            <span class="facebook-icon">Login with Facebook</span>
+          </div>
+        </div>
+
+        <button class="signIn-btn w-100 my-2">
+          <a (click)="signup()">Sign In</a>
+        </button>
+        <div class="signUphere-content-box text-center pb-4">
+          <div class="signUp-content">
+            <span class="signUp-before-content">Don't have account?</span
+            ><span class="signUp-end-content ps-1">Sign Up here</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+
+<div class="userTableHeading flex flex-align-center pt-3">
+  <h4 class="fw-bold">Estimation Result</h4>
+</div>
+<div class="table-box">
+  <table class="transcribe-table white-space-nowrap">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Task</th>
+        <th>Discription</th>
+        <th>Comments</th>
+        <th>hours</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estimationData of resultResponse, let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{estimationData.username_obj}}</td>
+        <td>{{estimationData.description_obj}}</td>
+        <td>{{estimationData.comments_obj}}</td>
+        <td>{{estimationData.hours_obj}}</td>
+        <td>
+          <div class="action-box">
+            <a href="#" class="mx-2">
+              <img src="./assets/images/edit-icon.png" alt="Duplicate">
+            </a>
+
+            <a href="#">
+              <img src="./assets/images/delete-icon.png" alt="Delete">
+            </a>
+
+          </div>
+        </td>
+    </tbody>
+  </table>
+</div>
+
+

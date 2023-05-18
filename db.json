@@ -1,0 +1,104 @@
+{
+  "signuppage": [
+    {
+      "email": "zubairali@gmail.com",
+      "password": "ali123@#",
+      "id": 1
+    },
+    {
+      "email": "zohaib@gmail.com",
+      "password": "zohaib123@#",
+      "id": 2
+    },
+    {
+      "email": "bilalbhai@gmail.com",
+      "password": "123456789",
+      "id": 3
+    },
+    {
+      "email": "zuhaib123@gmail.com",
+      "password": "ali123@#",
+      "id": 4
+    },
+    {
+      "email": "lava@gmail.com",
+      "password": "lava23!@",
+      "id": 5
+    }
+  ],
+  "addestimation": [
+    {
+      "username_obj": "app",
+      "description_obj": "mekup app",
+      "comments_obj": "make in 3 month",
+      "hours_obj": 55,
+      "id": 1
+    },
+    {
+      "username_obj": "asdf",
+      "description_obj": "asdfasdfa  ",
+      "comments_obj": "asdfasdfa",
+      "hours_obj": 44,
+      "id": 2
+    },
+    {
+      "username_obj": "zohaib",
+      "description_obj": "app devloper",
+      "comments_obj": "today finilaze",
+      "hours_obj": 786,
+      "id": 3
+    },
+    {
+      "username_obj": "asd",
+      "description_obj": "asdf",
+      "comments_obj": "fads",
+      "hours_obj": 12,
+      "id": 4
+    },
+    {
+      "username_obj": "full",
+      "description_obj": "stack",
+      "comments_obj": "lava",
+      "hours_obj": 302,
+      "id": 5
+    },
+    {
+      "username_obj": "rokub",
+      "description_obj": "Aut in et quaerat in",
+      "comments_obj": "Do magnam asperiores",
+      "hours_obj": 81,
+      "id": 6
+    },
+    {
+      "username_obj": "xeninady",
+      "description_obj": "Nulla elit consecte",
+      "comments_obj": "Sunt nisi laudantium",
+      "hours_obj": 4,
+      "id": 7
+    },
+    {
+      "username_obj": "kyvuf",
+      "description_obj": "A aut sint perspici",
+      "comments_obj": "Repellendus Anim vo",
+      "hours_obj": 32,
+      "id": 8
+    },
+    {
+      "username_obj": "cemucil",
+      "description_obj": "Quia vitae itaque au",
+      "comments_obj": "Nostrud quisquam id",
+      "hours_obj": 41,
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,57 @@
+
+<div class="userTableHeading flex flex-align-center pt-3">
+  <h4 class="fw-bold">Add Estimation</h4>
+</div>
+<div class="table-box">
+  <form [formGroup]="inputsvaule">
+  <table class="transcribe-table white-space-nowrap">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Task</th>
+        <th>Discription</th>
+        <th>Comments</th>
+        <th>hours</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td class="abc">
+
+            <input type="text" class="form-control" id="username" formControlName="username_obj" >
+
+        </td>
+        <td class="abc">
+            <input type="text" class="form-control" id="exampleInputPassword1" formControlName="description_obj">
+        </td>
+        <td class="abc">
+
+              <input type="text" class="form-control" id="exampleInputPassword1" formControlName="comments_obj">
+
+        </td>
+        <td class="abc">
+              <input type="number" class="form-control" id="exampleInputPassword1" formControlName="hours_obj">
+        </td>
+        <td>
+          <div class="action-box">
+            <a href="#" class="mx-2">
+              <img src="./assets/images/added.png" alt="Duplicate">
+            </a>
+
+            <a href="#">
+              <img src="./assets/images/delete-icon.png" alt="Delete">
+            </a>
+
+          </div>
+        </td>
+    </tbody>
+  </table>
+</form>
+  <div class="text-end w-100 p-1">
+    <button type="submit" class="btn btn-danger" (click)="getfunc()">submit</button>
+  </div>
+</div>
+
+

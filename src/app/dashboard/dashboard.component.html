@@ -1,0 +1,77 @@
+
+<header>
+  <div class="flex flex-between">
+  <!--Logo start-->
+  <div class="logo-box">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="" />
+        </div>
+      </div>
+  <!--Logo end-->
+  </div>
+</header>
+<aside>
+  <div class="main-inner">
+    <!--Sidebar start-->
+   <div class="sidebar flex flex-between">
+     <div class="nav-box">
+       <!--sidebar header start-->
+       <div class="sidebar-header flex-between py-1">
+         <div class="flex">
+           <div class="header-img flex-center">
+             <img src="./assets/images/imageteam.png" alt="">
+           </div>
+           <div class="sidebar-header-content">
+             <h6 class="user pt-1">user</h6>
+             <h5 class="name pt-1">Smith</h5>
+           </div>
+         </div>
+         <div class="header-arrow">
+           <img src="./assets/images/arrowdown.png" alt="">
+         </div>
+       </div>
+       <!--siderbar header end-->
+       <nav>
+         <ul>
+           <li>
+             <a routerLink="estimations" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+               <div><img src="./assets/images/file-white.png" alt="" routerLinkActive="img-1" /></div>
+               <span>Estimation</span>
+             </a>
+           </li>
+           <li>
+             <a routerLink="addestimation" routerLinkActive="active">
+               <div><img src="./assets/images/sidebar-users.png" alt="" routerLinkActive="img-1"/></div>
+               <span>Add Estimation</span>
+             </a>
+           </li>
+           <li>
+             <a routerLink="exportfile" routerLinkActive="active">
+               <div><img src="./assets/images/report.png" alt="" routerLinkActive="img-1"/></div>
+               <span>Export File</span>
+             </a>
+           </li>
+         </ul>
+       </nav>
+     </div>
+     <div class="logout-box">
+       <nav>
+         <ul>
+           <li class="active-list">
+             <a routerLink="/login">
+               <img src="./assets/images/Sign-Out.png" alt="" />
+               <span class="logout">Logout</span>
+             </a>
+           </li>
+         </ul>
+       </nav>
+     </div>
+   </div>
+   <!--sidebar end-->
+   <!--right side content start-->
+  <main class="right-inner-content-box">
+    <router-outlet></router-outlet>
+  </main>
+    <!--right side content end-->
+   </div>
+</aside>

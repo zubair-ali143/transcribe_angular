@@ -1,0 +1,50 @@
+
+
+  <!--Login page start-->
+  <section class="initial-screen">
+    <div class="form-container d-flex align-items-center justify-content-center">
+      <form class="p-3 login-form" [formGroup]="loginInput">
+        <div class="align-form">
+          <div class="form-heading py-2 ">
+            <h1>Welcome back</h1>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control"
+              id="form-email"
+              aria-describedby="emailHelp"
+              placeholder="Email/Phone Number"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              id="formpassword"
+              placeholder="Enter your Password"
+            />
+          </div>
+          <button class="signIn-btn w-100 my-2">
+            <a (click)="login()">Login</a>
+          </button>
+          <div class="signUphere-content-box text-center">
+            <div class="signUp-content">
+              <span class="signUp-before-content">Don't have account?</span
+              ><a routerLink="/signup"><span class="signUp-end-content ps-1">Sign Up here</span></a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!--Login page end-->
+
