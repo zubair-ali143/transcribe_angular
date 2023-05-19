@@ -5,10 +5,13 @@ import { CommonModule } from '@angular/common';
 import { AddestimationRoutingModule } from './addestimation-routing.module';
 import { AddestimationComponent } from './addestimation.component';
 
+import { EstimationresultComponent } from './estimationresult/estimationresult.component';
+
 
 @NgModule({
   declarations: [
-    AddestimationComponent
+    AddestimationComponent,
+    EstimationresultComponent
   ],
   imports: [
     CommonModule,

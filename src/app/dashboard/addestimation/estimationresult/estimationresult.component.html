@@ -3,7 +3,7 @@
   <h4 class="fw-bold">Estimation Result</h4>
 </div>
 <div class="table-box">
-  <table class="transcribe-table white-space-nowrap">
+  <table class="transcribe-table">
     <thead>
       <tr>
         <th>ID</th>
@@ -18,18 +18,18 @@
       <tr *ngFor="let estimationData of resultResponse, let i = index">
         <td>{{i + 1}}</td>
         <td>{{estimationData.username_obj}}</td>
-        <td>{{estimationData.description_obj}}</td>
-        <td>{{estimationData.comments_obj}}</td>
+        <td style="width:250px;">{{estimationData.description_obj}}</td>
+        <td><div style="width:250px;">{{estimationData.comments_obj}}</div></td>
         <td>{{estimationData.hours_obj}}</td>
         <td>
           <div class="action-box">
-            <a href="#" class="mx-2">
-              <img src="./assets/images/edit-icon.png" alt="Duplicate">
-            </a>
+            <button class="mx-2">
+              <img src="./assets/images/edit-icon.png" alt="">
+            </button>
 
-            <a href="#">
-              <img src="./assets/images/delete-icon.png" alt="Delete">
-            </a>
+            <button>
+              <img src="./assets/images/delete-icon.png" alt="Delete" (click)="delEstimation(estimationData)">
+            </button>
 
           </div>
         </td>
