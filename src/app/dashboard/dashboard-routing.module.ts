@@ -18,11 +18,6 @@ const routes: Routes = [
           import('./addestimation/addestimation.module').then((m) => m.AddestimationModule),
       },
       {
-        path: 'estimationresult',
-        loadChildren: () =>
-          import('./estimationresult/estimationresult.module').then((m) => m.EstimationresultModule),
-      },
-      {
         path: 'exportfile',
         loadChildren: () =>
           import('./exportfile/exportfile.module').then((m) => m.ExportfileModule),
