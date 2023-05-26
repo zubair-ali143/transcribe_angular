@@ -16,6 +16,13 @@ export class AddestimationComponent {
     private router: Router,
     private fb: FormBuilder
   ) {}
+
+  abcobject:Array<any>=[]
+
+  duplicate(abc:any){
+    this.abcobject = abc
+  }
+
   inputsvaule = new FormGroup({
     id: new FormControl(''),
     username_obj: new FormControl('', Validators.required),
@@ -36,4 +43,5 @@ export class AddestimationComponent {
       alert('Please Enter Value');
     }
   }
+
 }

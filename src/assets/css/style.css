@@ -687,7 +687,7 @@ input:focus-visible{
   font-family: var(--font-family);
 }
 .table-box{
-  height: 77vh;
+  height: 75vh;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;

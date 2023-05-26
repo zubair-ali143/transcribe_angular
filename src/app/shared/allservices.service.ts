@@ -6,6 +6,10 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root',
 })
 export class AllservicesService {
+
+  showbutton:boolean = true
+
+
   constructor(private http: HttpClient) {}
   //signup page (post method)
   signupPostmethod(signupdata: any) {
@@ -39,6 +43,15 @@ export class AllservicesService {
   //Add Estimation Page (delete Method)
   addestimationDeletemethod(id: number) {
     return this.http.delete(`http://localhost:3000/addestimation/${id}`).pipe(
+      map((res: any) => {
+        return res;
+      })
+    );
+  }
+
+  //Add Estimation Page (Edit Method)
+  addestimationPutmethod(id: number, data:any) {
+    return this.http.put(`http://localhost:3000/addestimation/${id}`, data).pipe(
       map((res: any) => {
         return res;
       })
